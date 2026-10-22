@@ -38,6 +38,11 @@ Soạn bài mới: Tải Unit mới (tên Unit + ảnh trang sách) > AI quét >
 - Đổi hoặc gỡ khóa: Cài đặt > Khóa dùng chung cho mọi máy học sinh > Lưu hoặc Gỡ, rồi Xuất bài học và tải lên lại.
 - Khi khóa bị khóa hoặc gỡ, ứng dụng vẫn chạy: giọng đọc tạo sẵn vẫn phát, chấm phát âm chuyển sang chấm theo từ nhận dạng được.
 
-## Mở bằng Chrome / Safari
+## Mở bằng Chrome
 
-Khi học sinh mở link trong Zalo, Facebook, Messenger hoặc trình duyệt khác trên Android, ứng dụng tự chuyển sang Chrome. Trên iPhone, ứng dụng chuyển từ Zalo/Facebook sang Safari. Nếu điện thoại không cho tự chuyển, trang hiện hướng dẫn 2 bước và nút Sao chép đường dẫn. Muốn tắt việc này cho một link, thêm `?stay=1` vào cuối đường dẫn.
+Ứng dụng đưa mọi học sinh sang Chrome:
+- Android (Zalo, Facebook, Samsung Internet, Cốc Cốc...): tự mở Chrome; máy chưa có Chrome thì mở trang cài Chrome trên CH Play.
+- iPhone (Safari, Zalo, Facebook...): tự mở Chrome; máy chưa có Chrome thì hiện nút cài từ App Store.
+- Máy tính (Edge, Firefox, Cốc Cốc, Safari...): trang web không tự mở được trình duyệt khác, nên hiện hướng dẫn mở bằng Chrome (sao chép đường dẫn, tải Chrome).
+- Trong hướng dẫn có cách đặt Chrome làm trình duyệt mặc định cho từng loại máy.
+- Muốn tắt việc này cho một link, thêm `?stay=1` vào cuối đường dẫn.
