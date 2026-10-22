@@ -24,7 +24,7 @@ Bấm nút xanh ở góc phải, nhập mã PIN giáo viên. Mã PIN chỉ để
 
 Lần đầu trên máy giáo viên, vào **Cài đặt**:
 
-1. **Google Sheets:** dán link Apps Script (đuôi `/exec`), Kiểm tra kết nối, Lưu đường dẫn.
+1. **Google Sheets:** cài mã `Code.gs` (dán vào Apps Script, chọn hàm setup, bấm Chạy để tạo 3 trang KẾT QUẢ, TỔNG HỢP, THEO UNIT; rồi Triển khai ứng dụng web, Bất kỳ ai). Dán link `/exec` vào đây, Kiểm tra kết nối, Lưu đường dẫn.
 2. **Giọng đọc:** bấm Tạo giọng đọc còn thiếu (giọng đọc tạo sẵn chạy trên mọi máy, kể cả Android không có giọng tiếng Anh).
 3. **Xuất bài học**, tải `lessons.json` lên GitHub thay tệp cũ.
 
