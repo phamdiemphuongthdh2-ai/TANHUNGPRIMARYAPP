@@ -37,3 +37,7 @@ Soạn bài mới: Tải Unit mới (tên Unit + ảnh trang sách) > AI quét >
 - Nên giới hạn khóa chỉ cho tên miền của trang (Google Cloud Console > APIs & Services > Credentials > chọn khóa > Application restrictions: Websites, thêm địa chỉ trang).
 - Đổi hoặc gỡ khóa: Cài đặt > Khóa dùng chung cho mọi máy học sinh > Lưu hoặc Gỡ, rồi Xuất bài học và tải lên lại.
 - Khi khóa bị khóa hoặc gỡ, ứng dụng vẫn chạy: giọng đọc tạo sẵn vẫn phát, chấm phát âm chuyển sang chấm theo từ nhận dạng được.
+
+## Mở bằng Chrome / Safari
+
+Khi học sinh mở link trong Zalo, Facebook, Messenger hoặc trình duyệt khác trên Android, ứng dụng tự chuyển sang Chrome. Trên iPhone, ứng dụng chuyển từ Zalo/Facebook sang Safari. Nếu điện thoại không cho tự chuyển, trang hiện hướng dẫn 2 bước và nút Sao chép đường dẫn. Muốn tắt việc này cho một link, thêm `?stay=1` vào cuối đường dẫn.
