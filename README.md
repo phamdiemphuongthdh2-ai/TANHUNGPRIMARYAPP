@@ -28,6 +28,8 @@ Lần đầu trên máy giáo viên, vào **Cài đặt**:
 2. **Giọng đọc:** bấm Tạo giọng đọc còn thiếu (giọng đọc tạo sẵn chạy trên mọi máy, kể cả Android không có giọng tiếng Anh).
 3. **Xuất bài học**, tải `lessons.json` lên GitHub thay tệp cũ.
 
+Tệp `lessons.json` này đã có sẵn Unit 1 đến Unit 5 (Lesson 1, tranh cắt từ sách).
+
 Soạn bài mới: Tải Unit mới (tên Unit + ảnh trang sách) > AI quét > kiểm tra trong Quản lý Unit > Tạo giọng đọc còn thiếu > Xuất bài học > tải `lessons.json` lên GitHub. Học sinh nhận bài mới sau vài phút.
 
 ## Khóa AI dùng chung
