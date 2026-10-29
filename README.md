@@ -40,11 +40,9 @@ Soạn bài mới: Tải Unit mới (tên Unit + ảnh trang sách) > AI quét >
 - Đổi hoặc gỡ khóa: Cài đặt > Khóa dùng chung cho mọi máy học sinh > Lưu hoặc Gỡ, rồi Xuất bài học và tải lên lại.
 - Khi khóa bị khóa hoặc gỡ, ứng dụng vẫn chạy: giọng đọc tạo sẵn vẫn phát, chấm phát âm chuyển sang chấm theo từ nhận dạng được.
 
-## Mở bằng Chrome
+## Trình duyệt cho từng loại máy
 
-Ứng dụng đưa mọi học sinh sang Chrome:
-- Android (Zalo, Facebook, Samsung Internet, Cốc Cốc...): tự mở Chrome; máy chưa có Chrome thì mở trang cài Chrome trên CH Play.
-- iPhone (Safari, Zalo, Facebook...): tự mở Chrome; máy chưa có Chrome thì hiện nút cài từ App Store.
-- Máy tính (Edge, Firefox, Cốc Cốc, Safari...): trang web không tự mở được trình duyệt khác, nên hiện hướng dẫn mở bằng Chrome (sao chép đường dẫn, tải Chrome).
-- Trong hướng dẫn có cách đặt Chrome làm trình duyệt mặc định cho từng loại máy.
-- Muốn tắt việc này cho một link, thêm `?stay=1` vào cuối đường dẫn.
+- Android: Chrome (mở từ Zalo, Facebook, Samsung Internet, Cốc Cốc... sẽ tự mở Chrome).
+- iPhone, iPad: Safari. Trên iPhone chỉ Safari cho trang web nhận dạng giọng nói để chấm điểm; ứng dụng tự mở Safari hoặc hướng dẫn sao chép đường dẫn sang Safari.
+- Máy tính: Chrome.
+- Màn hình đầu có nút Bật micro và nói thử: máy phải nghe được "Hello" thật mới báo micro sẵn sàng; nếu lỗi, hiện cách sửa đúng loại máy.
