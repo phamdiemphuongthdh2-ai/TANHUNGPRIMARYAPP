@@ -204,14 +204,23 @@ function doPost(e) {
 }
 
 function handle_(p) {
-  // Mở đường dẫn /exec trên trình duyệt hoặc bấm "Kiểm tra kết nối": tạo bảng nếu chưa có.
+  // Mở đường dẫn /exec trên trình duyệt hoặc bấm "Kiểm tra kết nối": tạo bảng nếu chưa có,
+  // và cho biết đã nhận bao nhiêu kết quả để thầy kiểm tra nhanh.
   if (p.ping || (!p.id && !p.ten)) {
     var ss0 = getSpreadsheet_();
-    ensureSheets_(ss0);
-    return json_({ ok: true, message: 'Kết nối thành công. Kết quả sẽ được ghi vào trang KẾT QUẢ của bảng tính này.', sheetUrl: ss0.getUrl() });
+    var log0 = ensureSheets_(ss0);
+    return json_({
+      ok: true,
+      message: 'Kết nối thành công. Kết quả sẽ được ghi vào trang KẾT QUẢ của bảng tính này.',
+      sheetUrl: ss0.getUrl(),
+      count: Math.max(0, log0.getLastRow() - 1)
+    });
   }
-  if (!p.id || !p.ten) {
-    return json_({ ok: false, error: 'Thiếu mã hoặc họ tên' });
+  if (!p.id) {
+    return json_({ ok: false, error: 'Thiếu mã kết quả (id)' });
+  }
+  if (!p.ten) {
+    return json_({ ok: false, error: 'Thiếu họ tên' });
   }
 
   var lock = LockService.getScriptLock();
@@ -241,7 +250,9 @@ function handle_(p) {
       cleanCell_(p.nhanxet),
       String(p.id)
     ]);
-    rebuildSummaries_(ss, log);
+    // Kết quả đã ghi xong. Nếu bước tính lại bảng tổng hợp lỗi thì vẫn báo thành công,
+    // để máy học sinh không gửi lại và không bị kẹt hàng đợi.
+    safe_(function () { rebuildSummaries_(ss, log); });
     return json_({ ok: true });
   } catch (err) {
     return json_({ ok: false, error: String(err && err.message ? err.message : err) });
